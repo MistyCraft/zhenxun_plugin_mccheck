@@ -93,7 +93,7 @@ v1.25
 | 文本 | ❌ | ⭕ | ❌ | ⭕ |
 | HTML | ⭕ | ⭕ | ⭕ | ⭕ |
 
-# [下载地址](https://github.com/molanp/zhenxun_chafu_Minecraft/releases)
+# [下载地址](https://github.com/molanp/zhenxun_plugin_mccheck/releases)
 
 
 ##  依赖

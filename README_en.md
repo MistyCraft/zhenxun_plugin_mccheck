@@ -87,7 +87,7 @@ mcheck [2001:db8:85a3::8a2e:370:7334]  <- IPv6 server address
 | Text | ❌ | ⭕ | ❌ | ⭕ |
 | HTML | ⭕ | ⭕ | ⭕ | ⭕ |
 
-# [Download](https://github.com/molanp/zhenxun_chafu_Minecraft/releases)
+# [Download](https://github.com/molanp/zhenxun_plugin_mccheck/releases)
 
 
 ## Requirement
