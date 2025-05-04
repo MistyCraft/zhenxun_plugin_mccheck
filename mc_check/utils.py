@@ -10,6 +10,7 @@ import dns.exception
 import dns.resolver
 import idna
 from nonebot import require
+from nonebot_plugin_uninfo import Uninfo
 import ujson
 
 from zhenxun.services.log import logger
@@ -18,7 +19,7 @@ from .configs import VERSION, lang, lang_data, message_type
 from .data_source import ConnStatus, MineStat, SlpProtocols
 
 require("nonebot_plugin_alconna")
-from nonebot_plugin_alconna import Image, Text
+from nonebot_plugin_alconna import Image, SupportScope, Text
 
 
 async def handle_exception(e):
@@ -640,3 +641,14 @@ async def parse_motd2html(data: str | None) -> str | None:
         return await parse_text_motd(data)
 
     return await parse_json_motd(data)
+
+def is_qbot(session: Uninfo) -> bool:
+    """判断bot是否为qq官bot
+
+    参数:
+        session: Uninfo
+
+    返回:
+        bool: 是否为官bot
+    """
+    return session.scope == SupportScope.qq_api
